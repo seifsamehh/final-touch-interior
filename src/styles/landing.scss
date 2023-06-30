@@ -1,0 +1,22 @@
+//start global varibales
+$main-color: #ffed00;
+//end global varibales
+.landing-page {
+  .intro-img {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 100%;
+      bottom: -35%;
+      left: -200%;
+      background-color: $main-color;
+      mask: url("../assets/Arrow.svg") no-repeat center;
+      @media screen and (max-width: 768px) {
+        bottom: -10%;
+        left: 0;
+      }
+    }
+  }
+}

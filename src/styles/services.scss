@@ -1,0 +1,22 @@
+//start global varibales
+$light: #f5f5fa;
+$dark: #1f1f29;
+$main-color: #ffed00;
+//end global varibales
+.services {
+  .content {
+    .left {
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        font-size: 4rem;
+        @media screen and (max-width: 768px) {
+          font-size: 2rem;
+          gap: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+//start global varibales
+$light: #f5f5fa;
+$dark: #1f1f29;
+$main-color: #ffed00;
+//end global varibales
+.contact {
+  background-image: url("../assets/sssurf.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  form {
+    input,
+    textarea {
+      width: 100%;
+      background-color: $dark;
+      caret-color: $light;
+      border: 2px solid $main-color;
+      // border: none;
+      outline: none;
+      border-radius: 5px;
+    }
+    textarea {
+      height: 200px;
+    }
+    button {
+      background-color: $dark;
+      color: $light;
+    }
+  }
+}
