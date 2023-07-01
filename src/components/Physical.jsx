@@ -15,7 +15,7 @@ const Physical = () => {
         />
       </Parallax>
       <Parallax translateY={["0px", "-600px"]}>
-        <h1 className="min-[290px]:text-5xl md:text-8xl dark:text-[#1f1f29] text-center z-10">
+        <h1 className="min-[290px]:text-4xl md:text-8xl dark:text-[#1f1f29] text-center z-10">
           Your dreams will come true
         </h1>
       </Parallax>

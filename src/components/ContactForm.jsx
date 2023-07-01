@@ -1,4 +1,3 @@
-// import { Parallax } from "react-scroll-parallax";
 import { useMutation } from "react-query";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
@@ -16,10 +15,13 @@ const validationSchema = Yup.object().shape({
 
 const sendEmail = async ({ email, message }) => {
   try {
-    const { data } = await axios.post("https://final-touch-back.onrender.com/api/send-email", {
-      email,
-      message,
-    });
+    const { data } = await axios.post(
+      "https://final-touch-back.onrender.com/api/send-email",
+      {
+        email,
+        message,
+      }
+    );
     return data;
   } catch (error) {
     throw new Error(error.message);
@@ -76,7 +78,7 @@ const ContactForm = () => {
       className="contact min-h-screen py-8 flex justify-center items-center flex-col overflow-hidden"
       id="contact-us"
     >
-      <h1 className="text-center min-[290px]:text-5xl md:text-7xl mb-12 dark:text-[#1f1f29]">
+      <h1 className="text-center min-[290px]:text-[1.3rem] md:text-7xl mb-12 dark:text-[#1f1f29]">
         LET&apos;S KEEP IN TOUCH
       </h1>
       <form
@@ -111,7 +113,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isLoading}
-          className="pl-2 pr-12 py-2 text-3xl text-[#1f1f29] rounded-md mt-8"
+          className="md:pl-2 md:pr-12 min-[290px]:pl-0 min-[290px]:pr-0 min-[290px]:w-full md:w-fit min-[290px]:py-2 text-3xl min-[290px]:text-[#1f1f29] min-[290px]:bg-[#ffed00] md:text-[#f5f5fa] md:bg-[#1f1f29] rounded-md mt-8"
         >
           {isLoading ? "Sending..." : "Send"}
         </button>
