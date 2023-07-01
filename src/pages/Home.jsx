@@ -100,9 +100,9 @@ const Home = () => {
       {/* footer */}
       <Footer />
       {/* progress */}
-      <div className="fixed right-4 bottom-4 z-10">
+      <div className="fixed z-10 right-4 bottom-4">
         <div
-          className="value text-3xl"
+          className="value text-3xl dark:text-[#1f1f29]"
           style={{
             "--value": `calc(${progressValue} + ${
               progressValue > 0 ? "1%" : "0"

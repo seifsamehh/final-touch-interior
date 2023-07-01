@@ -18,7 +18,9 @@ body {
 }
 @font-face {
   font-family: BellinaFlorence;
-  src: url("./fonts/BellinaFlorenceDEMO!-DEMO!.ttf");
+  src: local("Clash Display") url("./fonts/BellinaFlorenceDEMO!-DEMO!.ttf")
+    format("ttf");
+  font-display: swap;
 }
 a,
 img,

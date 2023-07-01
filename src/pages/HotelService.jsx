@@ -72,7 +72,7 @@ const HotelService = () => {
         >
           <ServiceHeader />
           <section className="hotel service-page" id="heroo">
-            <div className="service-heading min-h-screen flex justify-center items-center flex-col overflow-hidden">
+            <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden service-heading">
               <Parallax translateY={["50px", "-50px"]}>
                 <p className="stroke min-[290px]:text-6xl md:text-9xl">Hotel</p>
               </Parallax>
@@ -91,7 +91,7 @@ const HotelService = () => {
                 <p className="stroke min-[290px]:text-6xl md:text-9xl">Hotel</p>
               </Parallax>
             </div>
-            <div className="service-gallery flex justify-center items-center flex-wrap gap-6 py-8">
+            <div className="flex flex-wrap items-center justify-center gap-6 py-8 service-gallery">
               <img
                 src={hotel1}
                 alt="hotel 1"
@@ -175,9 +175,9 @@ const HotelService = () => {
             </div>
           </section>
           {/* progress */}
-          <div className="fixed right-4 bottom-4 z-10">
+          <div className="fixed z-10 right-4 bottom-4">
             <div
-              className="value text-3xl"
+              className="value text-3xl dark:text-[#1f1f29]"
               style={{
                 "--value": `calc(${progressValue} + ${
                   progressValue > 0 ? "1%" : "0"

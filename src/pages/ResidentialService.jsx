@@ -77,7 +77,7 @@ const ResidentialService = () => {
         >
           <ServiceHeader />
           <section className="residential service-page" id="heroo">
-            <div className="service-heading min-h-screen flex justify-center items-center flex-col overflow-hidden">
+            <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden service-heading">
               <Parallax translateY={["50px", "-50px"]}>
                 <p className="stroke min-[290px]:text-6xl md:text-9xl">
                   Residential
@@ -228,9 +228,9 @@ const ResidentialService = () => {
             </div>
           </section>
           {/* progress */}
-          <div className="fixed right-4 bottom-4 z-10">
+          <div className="fixed z-10 right-4 bottom-4">
             <div
-              className="value text-3xl"
+              className="value text-3xl dark:text-[#1f1f29]"
               style={{
                 "--value": `calc(${progressValue} + ${
                   progressValue > 0 ? "1%" : "0"
