@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
-import { Footer, ServiceHeader } from "../components";
+import { FooterArabic, ServiceHeaderArabic } from "../components";
 import furn1 from "../assets/furn-1.webp";
 import furn2 from "../assets/furn-2.webp";
 import furn3 from "../assets/furn-3.webp";
@@ -49,7 +49,7 @@ import furn44 from "../assets/furn-44.webp";
 import furn45 from "../assets/furn-45.webp";
 import "../styles/service-page.scss";
 
-const FurnitureService = () => {
+const FurnitureServiceArabic = () => {
   //loading
   const [loading, setLoading] = useState("false");
   useEffect(() => {
@@ -104,34 +104,28 @@ const FurnitureService = () => {
           animate={isLoaded ? "visible" : "hidden"}
           variants={variants}
           transition={{ duration: 2 }}
+          style={{ direction: "rtl" }}
+          className="special"
         >
-          <ServiceHeader />
+          <ServiceHeaderArabic />
           <section className="furniture service-page" id="heroo">
             <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden service-heading">
               <Parallax translateY={["50px", "-50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Furniture
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">أثاث</p>
               </Parallax>
               <Parallax translateY={["50px", "-50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Furniture
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">أثاث</p>
               </Parallax>
               <Parallax scale={[1, 1.5, 1, 1.5]}>
                 <h1 className="min-[290px]:text-5xl md:text-9xl my-6 dark:text-[#1f1f29]">
-                  Furniture
+                  أثاث
                 </h1>
               </Parallax>
               <Parallax translateY={["-50px", "50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Furniture
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">أثاث</p>
               </Parallax>
               <Parallax translateY={["-50px", "150px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Furniture
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">أثاث</p>
               </Parallax>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 py-8 service-gallery">
@@ -497,7 +491,7 @@ const FurnitureService = () => {
               />
             </div>
           </section>
-          <Footer />
+          <FooterArabic />
           {/* progress */}
           <div className="fixed z-10 right-4 bottom-4">
             <div
@@ -517,4 +511,4 @@ const FurnitureService = () => {
   );
 };
 
-export default FurnitureService;
+export default FurnitureServiceArabic;

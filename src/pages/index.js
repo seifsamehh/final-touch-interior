@@ -1,9 +1,16 @@
 export { default as Home } from "./Home";
+export { default as HomeArabic } from "./HomeArabic";
 export { default as Error } from "./Error";
 export { default as Offline } from "./Offline";
 export { default as Residential } from "./ResidentialService";
+export { default as ResidentialArabic } from "./ResidentialServiceArabic";
 export { default as Commercial } from "./CommercialService";
+export { default as CommercialArabic } from "./CommericalServiceArabic";
 export { default as Hotel } from "./HotelService";
+export { default as HotelArabic } from "./HotelServiceArabic";
 export { default as Administrative } from "./AdministrativeService";
+export { default as AdministrativeArabic } from "./AdministrativeServiceArabic";
 export { default as Landscape } from "./LandscapeService";
+export { default as LandscapeArabic } from "./LandscapeServiceArabic";
 export { default as Furniture } from "./FurnitureService";
+export { default as FurnitureArabic } from "./FurnitureServiceArabic";

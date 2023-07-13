@@ -1,28 +1,25 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
-import { Footer, ServiceHeader } from "../components";
-import admin1 from "../assets/admin-1.webp";
-import admin2 from "../assets/admin-2.webp";
-import admin3 from "../assets/admin-3.webp";
-import admin4 from "../assets/admin-4.webp";
-import admin5 from "../assets/admin-5.webp";
-import admin6 from "../assets/admin-6.webp";
-import admin7 from "../assets/admin-7.webp";
-import admin8 from "../assets/admin-8.webp";
-import admin9 from "../assets/admin-9.webp";
-import admin10 from "../assets/admin-10.webp";
-import admin11 from "../assets/admin-11.webp";
-import admin12 from "../assets/admin-12.webp";
-import admin13 from "../assets/admin-13.webp";
-import admin14 from "../assets/admin-14.webp";
-import admin15 from "../assets/admin-15.webp";
-import admin16 from "../assets/admin-16.webp";
-import admin17 from "../assets/admin-17.webp";
-import admin18 from "../assets/admin-18.webp";
+import { FooterArabic, ServiceHeaderArabic } from "../components";
+import res1 from "../assets/res-1.webp";
+import res2 from "../assets/res-2.webp";
+import res3 from "../assets/res-4.webp";
+import res4 from "../assets/res-5.webp";
+import res5 from "../assets/res-6.webp";
+import res6 from "../assets/res-7.webp";
+import res7 from "../assets/res-8.webp";
+import res8 from "../assets/res-9.webp";
+import res9 from "../assets/res-10.webp";
+import res10 from "../assets/res-11.webp";
+import res11 from "../assets/res-12.webp";
+import res12 from "../assets/res-13.webp";
+import res13 from "../assets/res-14.webp";
+import res14 from "../assets/res-15.webp";
+import res15 from "../assets/res-16.webp";
 import "../styles/service-page.scss";
 
-const AdministrativeService = () => {
+const ResidentialServiceArabic = () => {
   //loading
   const [loading, setLoading] = useState("false");
   useEffect(() => {
@@ -77,184 +74,153 @@ const AdministrativeService = () => {
           animate={isLoaded ? "visible" : "hidden"}
           variants={variants}
           transition={{ duration: 2 }}
+          style={{ direction: "rtl" }}
+          className="special"
         >
-          <ServiceHeader />
-          <section className="administrative service-page" id="heroo">
+          <ServiceHeaderArabic />
+          <section className="residential service-page-ar" id="heroo">
             <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden service-heading">
               <Parallax translateY={["50px", "-50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">سكنى</p>
               </Parallax>
               <Parallax translateY={["50px", "-50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">سكنى</p>
               </Parallax>
               <Parallax scale={[1, 1.5, 1, 1.5]}>
                 <h1 className="min-[290px]:text-5xl md:text-9xl my-6 dark:text-[#1f1f29]">
-                  Administrative
+                  سكنى
                 </h1>
               </Parallax>
               <Parallax translateY={["-50px", "50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">سكنى</p>
               </Parallax>
               <Parallax translateY={["-50px", "150px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">سكنى</p>
               </Parallax>
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-6 py-8 service-gallery">
+            <div className="service-gallery flex justify-center items-center flex-wrap gap-6 py-8 min-[290px]:mx-4 md:mx-0">
               <img
-                src={admin1}
-                alt="admin 1"
-                aria-label="admin 1"
+                src={res1}
+                alt="residential 1"
+                aria-label="residential 1"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin2}
-                alt="admin 2"
-                aria-label="admin 2"
+                src={res2}
+                alt="residential 2"
+                aria-label="residential 2"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin3}
-                alt="admin 3"
-                aria-label="admin 3"
+                src={res3}
+                alt="residential 3"
+                aria-label="residential 3"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin4}
-                alt="admin 4"
-                aria-label="admin 4"
+                src={res4}
+                alt="residential 4"
+                aria-label="residential 4"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin5}
-                alt="admin 5"
-                aria-label="admin 5"
+                src={res5}
+                alt="residential 5"
+                aria-label="residential 5"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin6}
-                alt="admin 6"
-                aria-label="admin 6"
+                src={res6}
+                alt="residential 6"
+                aria-label="residential 6"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin7}
-                alt="admin 7"
-                aria-label="admin 7"
+                src={res7}
+                alt="residential 7"
+                aria-label="residential 7"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin8}
-                alt="admin 8"
-                aria-label="admin 8"
+                src={res8}
+                alt="residential 8"
+                aria-label="residential 8"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin9}
-                alt="admin 9"
-                aria-label="admin 9"
+                src={res9}
+                alt="residential 9"
+                aria-label="residential 9"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin10}
-                alt="admin 10"
-                aria-label="admin 10"
+                src={res10}
+                alt="residential 10"
+                aria-label="residential 10"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin11}
-                alt="admin 11"
-                aria-label="admin 11"
+                src={res11}
+                alt="residential 11"
+                aria-label="residential 11"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin12}
-                alt="admin 12"
-                aria-label="admin 12"
+                src={res12}
+                alt="residential 12"
+                aria-label="residential 12"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin13}
-                alt="admin 13"
-                aria-label="admin 13"
+                src={res13}
+                alt="residential 13"
+                aria-label="residential 13"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin14}
-                alt="admin 14"
-                aria-label="admin 14"
+                src={res14}
+                alt="residential 14"
+                aria-label="residential 14"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin15}
-                alt="admin 15"
-                aria-label="admin 15"
-                width={400}
-                height={400}
-                loading="lazy"
-              />
-              <img
-                src={admin16}
-                alt="admin 16"
-                aria-label="admin 16"
-                width={400}
-                height={400}
-                loading="lazy"
-              />
-              <img
-                src={admin17}
-                alt="admin 17"
-                aria-label="admin 17"
-                width={400}
-                height={400}
-                loading="lazy"
-              />
-              <img
-                src={admin18}
-                alt="admin 18"
-                aria-label="admin 18"
+                src={res15}
+                alt="residential 15"
+                aria-label="residential 15"
                 width={400}
                 height={400}
                 loading="lazy"
               />
             </div>
           </section>
-          <Footer />
           {/* progress */}
           <div className="fixed z-10 right-4 bottom-4">
             <div
@@ -268,10 +234,11 @@ const AdministrativeService = () => {
               {progressValue}
             </div>
           </div>
+          <FooterArabic />
         </motion.div>
       )}
     </>
   );
 };
 
-export default AdministrativeService;
+export default ResidentialServiceArabic;

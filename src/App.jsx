@@ -4,14 +4,21 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import "./App.scss";
 import {
   Administrative,
+  AdministrativeArabic,
   Commercial,
+  CommercialArabic,
   Error,
   Furniture,
+  FurnitureArabic,
   Home,
+  HomeArabic,
   Hotel,
+  HotelArabic,
   Landscape,
+  LandscapeArabic,
   Offline,
   Residential,
+  ResidentialArabic,
 } from "./pages";
 
 const App = () => {
@@ -84,15 +91,31 @@ const App = () => {
                 <Wrapper>
                   <Routes>
                     <Route path="/" element={<Home />} />
+                    <Route path="/arabic" element={<HomeArabic />} />
                     <Route path="/residential" element={<Residential />} />
+                    <Route
+                      path="/residential-ar"
+                      element={<ResidentialArabic />}
+                    />
                     <Route path="/commercial" element={<Commercial />} />
+                    <Route
+                      path="/commercial-ar"
+                      element={<CommercialArabic />}
+                    />
                     <Route path="/hotel" element={<Hotel />} />
+                    <Route path="/hotel-ar" element={<HotelArabic />} />
                     <Route
                       path="/administrative"
                       element={<Administrative />}
                     />
+                    <Route
+                      path="/administrative-ar"
+                      element={<AdministrativeArabic />}
+                    />
                     <Route path="/landscape" element={<Landscape />} />
+                    <Route path="/landscape-ar" element={<LandscapeArabic />} />
                     <Route path="/furniture" element={<Furniture />} />
+                    <Route path="/furniture-ar" element={<FurnitureArabic />} />
                     <Route path="*" element={<Error />} />
                   </Routes>
                 </Wrapper>

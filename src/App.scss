@@ -20,6 +20,22 @@ body {
   font-family: BellinaFlorence;
   src: url("./fonts/BellinaFlorenceDEMO!-DEMO!.ttf");
 }
+.home-arabic {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  h1,
+  h2 {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+    font-weight: 700;
+  }
+  header {
+    .left {
+      background-position: right;
+    }
+  }
+}
+.special {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
 a,
 img,
 video,

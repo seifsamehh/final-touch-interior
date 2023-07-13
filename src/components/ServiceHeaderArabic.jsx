@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import "../styles/header.scss";
 import { Link } from "react-router-dom";
-const Header = () => {
+import "../styles/header.scss";
+import { MobileArabic } from ".";
+const ServiceHeaderArabic = () => {
   // theme
   const [theme, setTheme] = useState(() => {
     const storedTheme = localStorage.getItem("theme");
@@ -50,32 +51,65 @@ const Header = () => {
     }
   };
   return (
-    <header className="flex justify-around items-center p-4 min-[290px]:bg-[#1f1f29] min-[290px]:dark:bg-[#f5f5fa] md:dark:bg-transparent md:bg-transparent">
+    <header className="service-header flex justify-around items-center p-4 min-[290px]:bg-[#1f1f29] min-[290px]:dark:bg-[#f5f5fa] md:dark:bg-transparent md:bg-transparent">
       <div
-        className="left w-full cursor-pointer bg-left"
+        className="left w-full cursor-pointer bg-right"
         onClick={handleClickScroll4}
       ></div>
       <div className="middle w-full min-[290px]:hidden md:flex md:justify-center">
         <nav className="flex justify-center items-center gap-8">
-          <p
+          <Link
+            to="/arabic"
+            className="text-xl dark:text-[#f5f5fa] text-center"
+          >
+            الصفحة الرئيسية
+          </Link>
+          <Link
+            to="/residential-ar"
             className="text-xl dark:text-[#f5f5fa] text-center"
             onClick={handleClickScroll1}
           >
-            ABOUT US
-          </p>
-          <p
+            سكنى
+          </Link>
+          <Link
+            to="/commercial-ar"
             className="text-xl dark:text-[#f5f5fa] text-center"
             onClick={handleClickScroll2}
           >
-            SERVICES
-          </p>
-          <p
+            تجارى
+          </Link>
+          <Link
+            to="/hotel-ar"
             className="text-xl dark:text-[#f5f5fa] text-center"
             onClick={handleClickScroll3}
           >
-            CONTACT US
-          </p>
+            فندقى
+          </Link>
+          <Link
+            to="/administrative-ar"
+            className="text-xl dark:text-[#f5f5fa] text-center"
+            onClick={handleClickScroll3}
+          >
+            ادارى
+          </Link>
+          <Link
+            to="/landscape-ar"
+            className="text-xl dark:text-[#f5f5fa] text-center"
+            onClick={handleClickScroll3}
+          >
+            منظر جمالى
+          </Link>
+          <Link
+            to="/furniture-ar"
+            className="text-xl dark:text-[#f5f5fa] text-center"
+            onClick={handleClickScroll3}
+          >
+            أثاث
+          </Link>
         </nav>
+      </div>
+      <div className="mobile-middle w-full min-[290px]:block md:hidden">
+        <MobileArabic />
       </div>
       <div className="right w-full flex justify-end items-center gap-2">
         <label className="swap">
@@ -89,16 +123,16 @@ const Header = () => {
             checked={theme === "dark"}
           />
           <div className="swap-on dark:text-[#1f1f29] font-bold text-xl">
-            DARK
+            مظلم
           </div>
-          <div className="swap-off font-bold text-xl">LIGHT</div>
+          <div className="swap-off font-bold text-xl">منير</div>
         </label>
-        <Link to="/arabic" className="font-bold text-xl dark:text-[#1f1f29]">
-          ARABIC
+        <Link to="/" className="font-bold text-xl dark:text-[#1f1f29]">
+          الانجليزية
         </Link>
       </div>
     </header>
   );
 };
 
-export default Header;
+export default ServiceHeaderArabic;

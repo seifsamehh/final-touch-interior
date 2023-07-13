@@ -3,6 +3,24 @@ $light: #f5f5fa;
 $dark: #1f1f29;
 $main-color: #ffed00;
 //end global varibales
+.service-page-ar {
+  .service-heading {
+    p {
+      color: $main-color;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: $main-color;
+      font-family: "IBM Plex Sans Arabic", sans-serif;
+    }
+  }
+  .service-gallery {
+    img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+}
 .service-page {
   .service-heading {
     p {

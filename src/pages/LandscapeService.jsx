@@ -308,6 +308,7 @@ const LandscapeService = () => {
               />
             </div>
           </section>
+          <Footer />
           {/* progress */}
           <div className="fixed z-10 right-4 bottom-4">
             <div
@@ -321,7 +322,6 @@ const LandscapeService = () => {
               {progressValue}
             </div>
           </div>
-          <Footer />
         </motion.div>
       )}
     </>

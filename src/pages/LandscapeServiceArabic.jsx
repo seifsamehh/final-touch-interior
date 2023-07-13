@@ -1,28 +1,34 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
-import { Footer, ServiceHeader } from "../components";
-import admin1 from "../assets/admin-1.webp";
-import admin2 from "../assets/admin-2.webp";
-import admin3 from "../assets/admin-3.webp";
-import admin4 from "../assets/admin-4.webp";
-import admin5 from "../assets/admin-5.webp";
-import admin6 from "../assets/admin-6.webp";
-import admin7 from "../assets/admin-7.webp";
-import admin8 from "../assets/admin-8.webp";
-import admin9 from "../assets/admin-9.webp";
-import admin10 from "../assets/admin-10.webp";
-import admin11 from "../assets/admin-11.webp";
-import admin12 from "../assets/admin-12.webp";
-import admin13 from "../assets/admin-13.webp";
-import admin14 from "../assets/admin-14.webp";
-import admin15 from "../assets/admin-15.webp";
-import admin16 from "../assets/admin-16.webp";
-import admin17 from "../assets/admin-17.webp";
-import admin18 from "../assets/admin-18.webp";
+import { FooterArabic, ServiceHeaderArabic } from "../components";
+import land1 from "../assets/land-1.webp";
+import land2 from "../assets/land-2.webp";
+import land3 from "../assets/land-3.webp";
+import land4 from "../assets/land-4.webp";
+import land5 from "../assets/land-5.webp";
+import land6 from "../assets/land-6.webp";
+import land7 from "../assets/land-7.webp";
+import land8 from "../assets/land-8.webp";
+import land9 from "../assets/land-9.webp";
+import land10 from "../assets/land-10.webp";
+import land11 from "../assets/land-11.webp";
+import land12 from "../assets/land-12.webp";
+import land13 from "../assets/land-13.webp";
+import land14 from "../assets/land-14.webp";
+import land15 from "../assets/land-15.webp";
+import land16 from "../assets/land-16.webp";
+import land17 from "../assets/land-17.webp";
+import land18 from "../assets/land-18.webp";
+import land19 from "../assets/land-19.webp";
+import land20 from "../assets/land-20.webp";
+import land21 from "../assets/land-21.webp";
+import land22 from "../assets/land-22.webp";
+import land23 from "../assets/land-23.webp";
+import land24 from "../assets/land-24.webp";
 import "../styles/service-page.scss";
 
-const AdministrativeService = () => {
+const LandscapeServiceArabic = () => {
   //loading
   const [loading, setLoading] = useState("false");
   useEffect(() => {
@@ -77,184 +83,234 @@ const AdministrativeService = () => {
           animate={isLoaded ? "visible" : "hidden"}
           variants={variants}
           transition={{ duration: 2 }}
+          style={{ direction: "rtl" }}
+          className="special"
         >
-          <ServiceHeader />
-          <section className="administrative service-page" id="heroo">
+          <ServiceHeaderArabic />
+          <section className="landscape service-page" id="heroo">
             <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden service-heading">
               <Parallax translateY={["50px", "-50px"]}>
                 <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
+                  منظر جمالى
                 </p>
               </Parallax>
               <Parallax translateY={["50px", "-50px"]}>
                 <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
+                  منظر جمالى
                 </p>
               </Parallax>
               <Parallax scale={[1, 1.5, 1, 1.5]}>
                 <h1 className="min-[290px]:text-5xl md:text-9xl my-6 dark:text-[#1f1f29]">
-                  Administrative
+                  منظر جمالى
                 </h1>
               </Parallax>
               <Parallax translateY={["-50px", "50px"]}>
                 <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
+                  منظر جمالى
                 </p>
               </Parallax>
               <Parallax translateY={["-50px", "150px"]}>
                 <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
+                  منظر جمالى
                 </p>
               </Parallax>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 py-8 service-gallery">
               <img
-                src={admin1}
-                alt="admin 1"
-                aria-label="admin 1"
+                src={land1}
+                alt="land 1"
+                aria-label="land 1"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin2}
-                alt="admin 2"
-                aria-label="admin 2"
+                src={land2}
+                alt="land 2"
+                aria-label="land 2"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin3}
-                alt="admin 3"
-                aria-label="admin 3"
+                src={land3}
+                alt="land 3"
+                aria-label="land 3"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin4}
-                alt="admin 4"
-                aria-label="admin 4"
+                src={land4}
+                alt="land 4"
+                aria-label="land 4"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin5}
-                alt="admin 5"
-                aria-label="admin 5"
+                src={land5}
+                alt="land 5"
+                aria-label="land 5"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin6}
-                alt="admin 6"
-                aria-label="admin 6"
+                src={land6}
+                alt="land 6"
+                aria-label="land 6"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin7}
-                alt="admin 7"
-                aria-label="admin 7"
+                src={land7}
+                alt="land 7"
+                aria-label="land 7"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin8}
-                alt="admin 8"
-                aria-label="admin 8"
+                src={land8}
+                alt="land 8"
+                aria-label="land 8"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin9}
-                alt="admin 9"
-                aria-label="admin 9"
+                src={land9}
+                alt="land 9"
+                aria-label="land 9"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin10}
-                alt="admin 10"
-                aria-label="admin 10"
+                src={land10}
+                alt="land 10"
+                aria-label="land 10"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin11}
-                alt="admin 11"
-                aria-label="admin 11"
+                src={land11}
+                alt="land 11"
+                aria-label="land 11"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin12}
-                alt="admin 12"
-                aria-label="admin 12"
+                src={land12}
+                alt="land 12"
+                aria-label="land 12"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin13}
-                alt="admin 13"
-                aria-label="admin 13"
+                src={land13}
+                alt="land 13"
+                aria-label="land 13"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin14}
-                alt="admin 14"
-                aria-label="admin 14"
+                src={land14}
+                alt="land 14"
+                aria-label="land 14"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin15}
-                alt="admin 15"
-                aria-label="admin 15"
+                src={land15}
+                alt="land 15"
+                aria-label="land 15"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin16}
-                alt="admin 16"
-                aria-label="admin 16"
+                src={land16}
+                alt="land 16"
+                aria-label="land 16"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin17}
-                alt="admin 17"
-                aria-label="admin 17"
+                src={land17}
+                alt="land 17"
+                aria-label="land 17"
                 width={400}
                 height={400}
                 loading="lazy"
               />
               <img
-                src={admin18}
-                alt="admin 18"
-                aria-label="admin 18"
+                src={land18}
+                alt="land 18"
+                aria-label="land 18"
+                width={400}
+                height={400}
+                loading="lazy"
+              />
+              <img
+                src={land19}
+                alt="land 19"
+                aria-label="land 19"
+                width={400}
+                height={400}
+                loading="lazy"
+              />
+              <img
+                src={land20}
+                alt="land 20"
+                aria-label="land 20"
+                width={400}
+                height={400}
+                loading="lazy"
+              />
+              <img
+                src={land21}
+                alt="land 21"
+                aria-label="land 21"
+                width={400}
+                height={400}
+                loading="lazy"
+              />
+              <img
+                src={land22}
+                alt="land 22"
+                aria-label="land 22"
+                width={400}
+                height={400}
+                loading="lazy"
+              />
+              <img
+                src={land23}
+                alt="land 23"
+                aria-label="land 23"
+                width={400}
+                height={400}
+                loading="lazy"
+              />
+              <img
+                src={land24}
+                alt="land 24"
+                aria-label="land 24"
                 width={400}
                 height={400}
                 loading="lazy"
               />
             </div>
           </section>
-          <Footer />
+          <FooterArabic />
           {/* progress */}
           <div className="fixed z-10 right-4 bottom-4">
             <div
@@ -274,4 +330,4 @@ const AdministrativeService = () => {
   );
 };
 
-export default AdministrativeService;
+export default LandscapeServiceArabic;

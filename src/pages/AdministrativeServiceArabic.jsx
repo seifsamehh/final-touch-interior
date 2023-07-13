@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
-import { Footer, ServiceHeader } from "../components";
+import { FooterArabic, ServiceHeaderArabic } from "../components";
 import admin1 from "../assets/admin-1.webp";
 import admin2 from "../assets/admin-2.webp";
 import admin3 from "../assets/admin-3.webp";
@@ -22,7 +22,7 @@ import admin17 from "../assets/admin-17.webp";
 import admin18 from "../assets/admin-18.webp";
 import "../styles/service-page.scss";
 
-const AdministrativeService = () => {
+const AdministrativeServiceArabic = () => {
   //loading
   const [loading, setLoading] = useState("false");
   useEffect(() => {
@@ -77,34 +77,28 @@ const AdministrativeService = () => {
           animate={isLoaded ? "visible" : "hidden"}
           variants={variants}
           transition={{ duration: 2 }}
+          style={{ direction: "rtl" }}
+          className="special"
         >
-          <ServiceHeader />
-          <section className="administrative service-page" id="heroo">
+          <ServiceHeaderArabic />
+          <section className="administrative service-page-ar" id="heroo">
             <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden service-heading">
               <Parallax translateY={["50px", "-50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">ادارى</p>
               </Parallax>
               <Parallax translateY={["50px", "-50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">ادارى</p>
               </Parallax>
               <Parallax scale={[1, 1.5, 1, 1.5]}>
                 <h1 className="min-[290px]:text-5xl md:text-9xl my-6 dark:text-[#1f1f29]">
-                  Administrative
+                  ادارى
                 </h1>
               </Parallax>
               <Parallax translateY={["-50px", "50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">ادارى</p>
               </Parallax>
               <Parallax translateY={["-50px", "150px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">
-                  Administrative
-                </p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">ادارى</p>
               </Parallax>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 py-8 service-gallery">
@@ -254,7 +248,7 @@ const AdministrativeService = () => {
               />
             </div>
           </section>
-          <Footer />
+          <FooterArabic />
           {/* progress */}
           <div className="fixed z-10 right-4 bottom-4">
             <div
@@ -274,4 +268,4 @@ const AdministrativeService = () => {
   );
 };
 
-export default AdministrativeService;
+export default AdministrativeServiceArabic;

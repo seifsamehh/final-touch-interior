@@ -53,7 +53,7 @@ const ServiceHeader = () => {
   return (
     <header className="service-header flex justify-around items-center p-4 min-[290px]:bg-[#1f1f29] min-[290px]:dark:bg-[#f5f5fa] md:dark:bg-transparent md:bg-transparent">
       <div
-        className="left w-full cursor-pointer"
+        className="left w-full cursor-pointer bg-left"
         onClick={handleClickScroll4}
       ></div>
       <div className="middle w-full min-[290px]:hidden md:flex md:justify-center">

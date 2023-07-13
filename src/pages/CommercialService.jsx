@@ -227,6 +227,7 @@ const CommercialService = () => {
               />
             </div>
           </section>
+          <Footer />
           {/* progress */}
           <div className="fixed z-10 right-4 bottom-4">
             <div
@@ -240,7 +241,6 @@ const CommercialService = () => {
               {progressValue}
             </div>
           </div>
-          <Footer />
         </motion.div>
       )}
     </>

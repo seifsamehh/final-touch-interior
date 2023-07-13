@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Parallax } from "react-scroll-parallax";
-import { Footer, ServiceHeader } from "../components";
+import { FooterArabic, ServiceHeaderArabic } from "../components";
 import hotel1 from "../assets/hotel-1.webp";
 import hotel2 from "../assets/hotel-2.webp";
 import hotel3 from "../assets/hotel-3.webp";
@@ -14,7 +14,7 @@ import hotel9 from "../assets/hotel-9.webp";
 import hotel10 from "../assets/hotel-10.webp";
 import "../styles/service-page.scss";
 
-const HotelService = () => {
+const HotelServiceArabic = () => {
   //loading
   const [loading, setLoading] = useState("false");
   useEffect(() => {
@@ -69,26 +69,28 @@ const HotelService = () => {
           animate={isLoaded ? "visible" : "hidden"}
           variants={variants}
           transition={{ duration: 2 }}
+          style={{ direction: "rtl" }}
+          className="special"
         >
-          <ServiceHeader />
-          <section className="hotel service-page" id="heroo">
+          <ServiceHeaderArabic />
+          <section className="hotel service-page-ar" id="heroo">
             <div className="flex flex-col items-center justify-center min-h-screen overflow-hidden service-heading">
               <Parallax translateY={["50px", "-50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">Hotel</p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">فندقى</p>
               </Parallax>
               <Parallax translateY={["50px", "-50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">Hotel</p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">فندقى</p>
               </Parallax>
               <Parallax scale={[1, 1.5, 1, 1.5]}>
                 <h1 className="min-[290px]:text-5xl md:text-9xl my-6 dark:text-[#1f1f29]">
-                  Hotel
+                  فندقى
                 </h1>
               </Parallax>
               <Parallax translateY={["-50px", "50px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">Hotel</p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">فندقى</p>
               </Parallax>
               <Parallax translateY={["-50px", "150px"]}>
-                <p className="stroke min-[290px]:text-6xl md:text-9xl">Hotel</p>
+                <p className="stroke min-[290px]:text-6xl md:text-9xl">فندقى</p>
               </Parallax>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-6 py-8 service-gallery">
@@ -174,7 +176,7 @@ const HotelService = () => {
               />
             </div>
           </section>
-          <Footer />
+          <FooterArabic />
           {/* progress */}
           <div className="fixed z-10 right-4 bottom-4">
             <div
@@ -194,4 +196,4 @@ const HotelService = () => {
   );
 };
 
-export default HotelService;
+export default HotelServiceArabic;
